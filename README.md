@@ -5,15 +5,22 @@ For rhetorical role classification from legal texts using a transformer-LSTM-CRF
 for TF-BiLSTM-CRF (baseline model)
 
 on India dataset
-
-python [run.py](http://run.py/) --use_tf_lstm_crf True —data_path `/dataset/pretrained_embeddings/IN-train-set/` —`dataset_size` 150
+python [run.py](http://run.py/) --use_tf_lstm_crf True —data_path `/dataset/IN-train-set/` —`dataset_size` 150
 
 on UK dataset
+python [run.py](http://run.py/) --use_tf_lstm_crf True —data_path `/dataset/UK-train-set/` —`dataset_size` 50
 
+
+IF using pretrained embeddings
+
+on India dataset
+python [run.py](http://run.py/) --use_tf_lstm_crf True —data_path `/dataset/pretrained_embeddings/IN-train-set/` —`dataset_size` 150 --pretrained True
+
+on UK dataset
 python [run.py](http://run.py/) --use_tf_lstm_crf True —data_path `/dataset/pretrained_embeddings/UK-train-set/` —`dataset_size` 50
+--pretrained True
 
 For OUR models :
-
 TF-MARRO:
 
 on India Dataset:
